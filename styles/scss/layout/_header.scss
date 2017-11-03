@@ -1,0 +1,44 @@
+.wrapper {
+  max-width: 940px;
+  height: inherit;
+  margin: 0 auto;
+}
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  & h1 {
+    font: 400 30px 'Roboto';
+    color: #22b8c6;
+    padding-left: 10px;
+  }
+}
+.nav-list {
+  display: flex;
+  & li {
+    margin-left: 20px ;
+    &:first-child {
+      margin: 0;
+    }
+  }
+  & a {
+    font: 900 13px 'Roboto';
+    text-transform: uppercase;
+    color: #ffffff;
+    &:hover {
+      color: #00e0d0;
+    }
+    &.active {
+      color: #00e0d0;
+    }
+  }
+}
+a {
+  text-decoration: none ;
+}
+

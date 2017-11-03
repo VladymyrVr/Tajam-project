@@ -1,0 +1,50 @@
+.comments-section {
+  background: $gradient, url("../../images/comments-background.png") no-repeat   center center;
+  background-size: 100% 100%;
+  height: calc(100vh - 140px);
+    .comments-flex-wrap {
+      display: flex;
+      height: inherit;
+      justify-content: center;
+      align-items: center;
+        blockquote {
+          max-width: 770px;
+          font: 400 16px/26px 'Playfair Display';
+          color: #ffffff;
+          opacity: .85;
+          letter-spacing: 0.3px;
+          text-align: center;
+          position: relative;
+          padding-top: 40px;
+            &::before {
+              position: absolute;
+              content:  " “ ";
+              font: 400 100px/22px 'Playfair Display';
+              color: #ffffff;
+              opacity: .9;
+              letter-spacing: 3px;
+              top: 0;
+              left: 0;
+              right: 0;
+              margin: auto;
+            }
+        }
+    }
+}
+blockquote {
+  footer {
+    padding-top: 50px;
+      .author {
+        font: 900 14px/22px "Roboto";
+        color: #ffffff;
+        text-transform: uppercase;
+        letter-spacing: 0.7px;
+      }
+      .author-position {
+        font: 300 13px/22px 'Roboto';
+        color: #ffffff;
+        opacity: .7;
+        text-transform: uppercase;
+      }
+  }
+}

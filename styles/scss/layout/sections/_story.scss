@@ -1,0 +1,27 @@
+.padding-style {
+  padding: 70px 0;
+}
+.flex-story-wrapper {
+  display: flex;
+  justify-content: center;
+    img{
+      margin: 0 100px 0 40px;
+      height: 100%;
+
+   }
+}
+.company-story {
+    .h2-style {
+      @include h2-style;
+    }
+    p {
+      margin-top: 25px;
+      font: 300 14px/22px 'Roboto';
+      color: #413d4b;
+      opacity: 0.75;
+      letter-spacing: 0.4px;
+    }
+    .learn-more {
+      margin-top: 45px;
+    }
+}

@@ -1,0 +1,60 @@
+.team-section {
+  background: $gradient, url("../../images/team-background.png") no-repeat center center;
+  background-size: 100%;
+  .team-header {
+    @include h2-style;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #ffffff;
+  }
+  .title-content {
+    @include title-content;
+    color: #f9f9f9;
+    margin-bottom: 40px;
+    &::after {
+      @include separator;
+      background-color: #ffffff;
+      opacity: .2;
+    }
+  }
+}
+.team-list {
+  display: flex;
+  justify-content: space-between;
+    li {
+      margin-bottom: 70px;
+        h2 {
+          font: 900 14px 'Roboto';
+          color: #ffffff;
+          text-transform: uppercase;
+          letter-spacing: 0.7px;
+        }
+        span {
+          font: 300 13px 'Roboto';
+          color: #fafafa;
+          opacity: 0.7;
+          text-transform: uppercase;
+        }
+    }
+}
+.image-wrapper {
+  max-width: 220px;
+  height: 229px;
+}
+.team-persons {
+  text-align: center;
+  padding: 20px 0;
+  border: 1px solid rgba(225,225,225,.5);
+  border-top: none;
+}
+.join-team {
+  font: 300 14px 'Roboto';
+  color: #f3f3f3;
+  letter-spacing: .7px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.style-button:hover {
+  background-color: #00e0d0;
+  color: #ffffff;
+}

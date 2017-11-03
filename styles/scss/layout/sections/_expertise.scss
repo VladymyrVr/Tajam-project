@@ -1,0 +1,78 @@
+.expertise-section {
+    .expertise-header {
+      @include h2-style;
+      text-align: center;
+      color: #413d4b;
+      margin-bottom: 15px;
+    }
+  .title-content {
+    @include title-content;
+    margin-bottom: 105px;
+    color: #2f2d35;
+    opacity: .75;
+      &::after {
+        @include separator;
+        background-color: #413d4b;
+        opacity: .3;
+    }
+}
+
+}
+.expertise-list {
+  margin-top: 45px;
+  display: flex;
+  flex-wrap: wrap;
+  li {
+    flex-basis: 240px;
+    text-align: center;
+    padding: 80px 30px 40px 30px;
+    border-top: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+      &.top-border-none {
+       border-top: none;
+    }
+      &.right-border-none {
+        border-right: none;
+      }
+    p {
+      max-width: 255px;
+      font: 300 14px/22px "Roboto";
+      color: #333333;
+      opacity: .75;
+    }
+    h2 {
+      position: relative;
+      display: inline-block;
+      font: 900 14px 'Roboto';
+      color: #413d4b;
+      text-transform: uppercase;
+      letter-spacing: 0.7px;
+      margin-bottom: 25px;
+      padding-top: 40px;
+        &.list-icon3::after {
+          width: 28px;
+        }
+        &.list-icon5::after {
+          width: 41px;
+        }
+    }
+  }
+}
+@for $i from 1 through $icon-number {
+  h2.list-icon#{$i}::after {
+    position: absolute;
+    content: "";
+    padding-bottom: 40px;
+    width: 50px;
+    height: 50px;
+    background: url("../../images/enterprise-icon#{$i}.png") no-repeat;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    }
+  }
+
+
+
+
